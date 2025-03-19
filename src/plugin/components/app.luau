@@ -8,6 +8,6 @@ return function(props: {
 })
 	return create "Frame" {
 	   Size = UDim2.fromOffset(600, 600),
-       Color = Colors.fuchsia["500"],
+       BackgroundColor3 = Colors.black,
 	}
 end
