@@ -1,0 +1,18 @@
+{
+  "emitLegacyScripts": false,
+  "name": "teams",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "teams": {
+        "$className": "Folder",
+        "src": {
+          "$path": "src"
+        },
+        "roblox_packages": {
+          "$path": "roblox_packages"
+        }
+      }
+    }
+  }
+}
