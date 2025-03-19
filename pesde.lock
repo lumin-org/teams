@@ -95,6 +95,7 @@ ref_ty = "pesde"
 index_url = "https://github.com/daimond113/pesde-index"
 
 [graph."lumin/debugger@1.0.3 roblox"]
+direct = ["debugger", { name = "lumin/debugger", version = "^1.0.3", index = "default" }, "standard"]
 resolved_ty = "standard"
 
 [graph."lumin/debugger@1.0.3 roblox".pkg_ref]
@@ -120,6 +121,14 @@ index_url = "https://github.com/pesde-pkg/index"
 debugger = [{ name = "lumin/debugger", version = "^1.0.3", index = "https://github.com/pesde-pkg/index" }, "standard"]
 rojo = [{ name = "pesde/rojo", version = "^7.4.4", index = "https://github.com/pesde-pkg/index", target = "lune" }, "dev"]
 scripts = [{ name = "pesde/scripts_rojo", version = "^0.1.0", index = "https://github.com/pesde-pkg/index", target = "lune" }, "dev"]
+
+[graph."pepeeltoro41/ui_labs@2.3.8 roblox"]
+direct = ["ui_labs", { name = "pepeeltoro41/ui_labs", version = "^2.3.8", index = "default" }, "standard"]
+resolved_ty = "standard"
+
+[graph."pepeeltoro41/ui_labs@2.3.8 roblox".pkg_ref]
+ref_ty = "pesde"
+index_url = "https://github.com/pesde-pkg/index"
 
 [graph."pesde/rojo@7.4.4 lune"]
 direct = ["rojo", { name = "pesde/rojo", version = "^7.4.4", index = "default", target = "lune" }, "dev"]
@@ -194,5 +203,13 @@ direct = ["vide", { wally = "wally#centau/vide", version = "^0.3.1", index = "de
 resolved_ty = "standard"
 
 [graph."wally#centau/vide@0.3.1 roblox".pkg_ref]
+ref_ty = "wally"
+index_url = "https://github.com/UpliftGames/wally-index"
+
+[graph."wally#gcaptn/tailwind-colors@0.1.6 roblox"]
+direct = ["colors", { wally = "wally#gcaptn/tailwind-colors", version = "^0.1.6", index = "default" }, "standard"]
+resolved_ty = "standard"
+
+[graph."wally#gcaptn/tailwind-colors@0.1.6 roblox".pkg_ref]
 ref_ty = "wally"
 index_url = "https://github.com/UpliftGames/wally-index"

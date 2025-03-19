@@ -1,6 +1,7 @@
 name = "lumin/teams"
 version = "0.1.0"
 license = "MIT"
+private = true
 
 [target]
 environment = "roblox"
@@ -21,4 +22,7 @@ rojo = { name = "pesde/rojo", version = "^7.4.4", target = "lune" }
 
 [dependencies]
 framework = { name = "lumin/framework", version = "^11.0.0" }
+debugger = { name = "lumin/debugger", version = "^1.0.3" }
 vide = { wally = "centau/vide", version = "^0.3.1" }
+colors = { wally = "gcaptn/tailwind-colors", version = "^0.1.6" }
+ui_labs = { name = "pepeeltoro41/ui_labs", version = "^2.3.8" }
