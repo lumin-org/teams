@@ -11,6 +11,9 @@
           "roblox": {
             "enabled": true,
             "security_level": "plugin"
+          },
+          "fflags": {
+            "enable_new_solver": false
           }
         }
       }

@@ -25,4 +25,5 @@ framework = { name = "lumin/framework", version = "^11.0.0" }
 debugger = { name = "lumin/debugger", version = "^1.0.3" }
 vide = { wally = "centau/vide", version = "^0.3.1" }
 colors = { wally = "gcaptn/tailwind-colors", version = "^0.1.6" }
+toolbar = { wally = "stravant/create-shared-toolbar", version = "^0.1.0" }
 ui_labs = { name = "pepeeltoro41/ui_labs", version = "^2.3.8" }

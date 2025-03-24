@@ -1,5 +1,4 @@
 {
-  "emitLegacyScripts": false,
   "name": "teams",
   "tree": {
     "$className": "DataModel",

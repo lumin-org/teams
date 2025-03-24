@@ -1,9 +1,9 @@
-if not plugin then
+if not plugin or not game:GetService("Players").LocalPlayer then
 	return
 end
 
-local Framework = require("../roblox_packages/framework")
-local Plugin = script.plugin
+local Packages = script.Parent.roblox_packages
+local Framework = require(Packages.framework)
 
-Framework.Add({ Plugin })
+Framework.Add({ script :: any })
 Framework.Start()

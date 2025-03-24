@@ -1,28 +1,25 @@
 -- Variables
-local Plugin = script:FindFirstAncestorOfClass("Plugin")
-local WidgetInfo = DockWidgetPluginGuiInfo.new(
-    Enum.InitialDockState.Left,
-    false,
-    false,
-    320,
-    400,
-    300,
-    200
-)
+local Packages = script.Parent.Parent.Parent.roblox_packages
+local CreateToolbar = require(Packages.toolbar)
+
+local Plugin = script:FindFirstAncestorOfClass("Plugin") :: Plugin
+local WidgetInfo = DockWidgetPluginGuiInfo.new(Enum.InitialDockState.Left, false, false, 400, 400, 250, 250)
 
 -- Shared plugin suite toolbar
-if not _G.__LuminToolbar then
-	_G.__LuminToolbar = Plugin:CreateToolbar("Lumin Suite")
-end
-
-local Toolbar: PluginToolbar = _G.__LuminToolbar
-local Button: PluginToolbarButton = Toolbar:CreateButton("Teams", "Open Lumin Teams", "")
-local Widget: DockWidgetPluginGui = Plugin:CreateDockWidgetPluginGui("LuminSuiteTeams", WidgetInfo)
-
+local Widget = Plugin:CreateDockWidgetPluginGui("LuminSuiteTeams", WidgetInfo)
+Widget.Name = "LuminSuiteTeams"
 Widget.Title = "Teams"
-Button.Click:Connect(function()
-    Widget.Enabled = not Widget.Enabled
-end)
+
+CreateToolbar(Plugin, {
+	CombinerName = "LuminSuiteToolbar",
+	ToolbarName = "Lumin Suite",
+	ButtonName = "Teams",
+	ButtonIcon = "",
+	ButtonTooltip = "Manage your team with peace of mind",
+	ClickedFn = function()
+		Widget.Enabled = not Widget.Enabled
+	end,
+})
 
 -- Module
 return Widget
